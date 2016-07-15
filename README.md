@@ -1,24 +1,20 @@
-# README
+# 맛집 Review 웹페이지 템플릿
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 소개
+웹페이지에서 게시물을 올리고 해당 게시물에 대한 댓글을 달아 커뮤니티를 사이트를 구축 할 수 있는 템플릿
+ex) 맛집 리뷰 커뮤니티 
 
-Things you may want to cover:
+## 기능
+- 게시물 CRUD
+- 댓글 CRUD
+- 회원가입, 로그인, 회원페이지
+- 회원가입시 이메일 인증 시스템
+- 게시물/댓글 작성/수정/삭제 권한 관리
+- 이미지 업로드 기능
 
-* Ruby version
+## 개발환경
+- Ubuntu 16.04 LTS
+- Ruby : 2.3.1
+- Rails : 5.0.0
+- Database : Dev-> sqlite3, Prod -> postgresql
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
