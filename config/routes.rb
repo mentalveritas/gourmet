@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   post 'foods/edit_complete'
 
-  get 'foods/delete_complete'
+  get 'foods/delete_complete/:id' => 'foods#delete_complete'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
