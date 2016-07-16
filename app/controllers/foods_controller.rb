@@ -70,8 +70,15 @@ class FoodsController < ApplicationController
     comment.post_id = params[:post_id]
     comment.content = params[:comment_content]
     comment.save
-
     flash[:alert] = "새 댓글을 달았습니다."
-    redirect_to "foods/show/#{comment.post_id}"
+    redirect_to "/foods/show/#{comment.post_id}"
   end
+
+  def delete_comment_complete
+    comment = Comment.find(params[:id])
+    comment.destroy
+    flash[:alert] = "댓글이 삭제되었습니다."
+    redirect_to "/foods/show/#{comment.post_id}"
+  end
+
 end

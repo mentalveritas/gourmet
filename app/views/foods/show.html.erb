@@ -10,7 +10,7 @@
   <hr>
   <!--댓글출력기능-->
   <% @post.comments.each do |comment| %>
-  <p><strong>아이디</strong> <%= comment.content %></p>
+  <p><strong>아이디</strong> <%= comment.content %> | <a href="/foods/delete_comment_complete/<%= comment.id %>">삭제</a></p>
   <% end %>
   <!--댓글출력기능-->
   <!--댓글달기기능-->
