@@ -15,5 +15,7 @@ Rails.application.routes.draw do
 
   get 'foods/delete_complete/:id' => 'foods#delete_complete'
 
+  post 'foods/write_comment_complete'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
