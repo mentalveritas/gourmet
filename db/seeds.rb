@@ -6,15 +6,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-categories = ["한식","일식","중식","양식"]
+# categories = ["한식","일식","중식","양식"]
+#
+# categories.each do |category|
+#   0.upto(1) do |i|
+#     p = Post.new
+#     p.user_id = i + 1
+#     p.category = category
+#     p.title = "#{category}집#{i} 이름"
+#     p.content = "#{category}집#{i} 설명"
+#     p.save
+#   end
+# end
 
-categories.each do |category|
-  0.upto(1) do |i|
-    p = Post.new
-    p.user_id = i + 1
-    p.category = category
-    p.title = "#{category}집#{i} 이름"
-    p.content = "#{category}집#{i} 설명"
-    p.save
-  end
-end
+u = User.new
+u.username = "charles"
+u.password = "12345678"
+u.save
+
+u = User.new
+u.username = "robert"
+u.password = "87654321"
+u.save
