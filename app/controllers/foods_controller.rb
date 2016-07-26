@@ -14,8 +14,10 @@ class FoodsController < ApplicationController
       @category = "일식"
     when "chinese"
       @category = "중식"
-    else
+    when "western"
       @category = "양식"
+    else
+      @category = "분식"
     end
     @posts = Post.where(category: @category)
   end
