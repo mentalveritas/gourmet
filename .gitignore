@@ -22,3 +22,6 @@
 
 # swp
 *.swp
+
+# Image upload
+/public/uploads/
