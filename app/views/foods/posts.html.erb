@@ -1,10 +1,16 @@
-<%= flash[:alert] %>
 
-<div>
-  <h2>Rails의 맛집 맛집정보공유 사이트에 오신걸 환영합니다.</h2>
-  <p>우리 모두 함께 만들어 가는 레알 맛집 프로젝트</p>
+
+<div class="container">
+  <% if !flash[:alert].nil? %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+  <% end %>
+
+  <div class="well text-center">
+    <h3>Rails의 맛집 맛집정보공유 사이트에 오신걸 환영합니다.</h3>
+    <p>우리 모두 함께 만들어 가는 레알 맛집 프로젝트</p>
+  </div>
+
+  <%= render :partial => "foods/posts" %>
 </div>
-
-<hr>
-
-<%= render :partial => "foods/posts" %>
