@@ -35,7 +35,7 @@ gem 'mini_magick'
 
 # bootstrap
 gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
+# gem 'autoprefixer-rails'
 
 
 
