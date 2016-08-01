@@ -23,7 +23,6 @@
       <% end %>
       <form class="text-left" action="/foods/write_comment_complete" method="post">
         <input type="hidden" name="post_id" value="<%= @post.id %>">
-
         <% if !@comment_writer.nil? %>
         <input type="hidden" name="user_id" value="<%= @comment_writer.id %>">
         <p><strong><%= @comment_writer.username %></strong>
